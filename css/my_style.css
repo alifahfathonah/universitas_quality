@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+/*Mengubah warna navbar*/
+.navbar-fixed-top {
+	background-color:RGBA(248,248,248, 0.9);
+	font-weight: bold;
+}
+/*END-Mengubah warna navbar*/
+
+.jumbotron {
+	background:url(../images/leaf.jpg) no-repeat center;
+	background-size:cover;
+	min-height:600px;
+	margin:0px;
+	padding-bottom:0px;
+}
+
+
+/*Untuk membuat info overlay pada gambar/items*/
+div.special {
+	border: 1px solid #ff0ff0;
+	position: relative;
+}
+div.special a span {
+	display: block;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+
+	padding: 0px 10px 0px 10px;
+	font-size: 1.1em;
+	font-weight: normal;
+	line-height: 1.3em;
+	color: #000;
+	background: RGBA(248,248,248, 0.9);
+}
+/*END-Untuk membuat info overlay pada gambar/items*/
+
+

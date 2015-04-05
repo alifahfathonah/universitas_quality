@@ -1,0 +1,454 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"al",
+				"alt	Attr"
+			],
+			[
+				"ng-cl",
+				"ng-click	AngularJS"
+			],
+			[
+				"fun",
+				"fun	Function"
+			],
+			[
+				"fo",
+				"form	Tag"
+			],
+			[
+				"p",
+				"put	AngularJS"
+			],
+			[
+				"g",
+				"get	AngularJS"
+			],
+			[
+				"tota",
+				"totalCart"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"li",
+				"li	Tag"
+			],
+			[
+				"u",
+				"ul	Tag"
+			],
+			[
+				"song",
+				"Song"
+			],
+			[
+				"re",
+				"requestFunding"
+			],
+			[
+				"pr",
+				"price"
+			],
+			[
+				"item",
+				"items"
+			],
+			[
+				"bac",
+				"background-image"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.php",
+			"settings":
+			{
+				"buffer_size": 4788,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "fakultas.php",
+			"settings":
+			{
+				"buffer_size": 4050,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "tambah-peminjam.php",
+			"settings":
+			{
+				"buffer_size": 4706,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/my_style.css",
+			"settings":
+			{
+				"buffer_size": 717,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "<div class=\"col-md-8 col-sm-8\" style=\"text-align:left;\">\n			                \n                <div id=\"carousel-example-generic\" class=\"carousel slide\">\n                  <!-- Indicators -->\n                  <ol class=\"carousel-indicators\">\n                    <li data-target=\"#carousel-example-generic\" data-slide-to=\"0\" class=\"active\"></li>\n                    <li data-target=\"#carousel-example-generic\" data-slide-to=\"1\"></li>\n                    <li data-target=\"#carousel-example-generic\" data-slide-to=\"2\"></li>\n                  </ol>\n                \n                  <!-- Wrapper for slides -->\n                  <div class=\"carousel-inner\">\n                  \n                    <div class=\"item active\">\n                      <img src=\"/universitas_quality/images/bg.jpg\" alt=\"nORMAL\">\n                      <div class=\"carousel-caption\">\n                        Caption\n                      </div>\n                    </div>\n                    \n                    <div class=\"item\">\n                      <img src=\"/universitas_quality/images/bg_blur.jpg\" alt=\"Blur\">\n                      <div class=\"carousel-caption\">\n                        Caption\n                      </div>\n                    </div>\n                    \n                    <div class=\"item\">\n                      <img src=\"/universitas_quality/images/bg.jpg\" alt=\"nORMAL\">\n                      <div class=\"carousel-caption\">\n                        Caption\n                      </div>\n                    </div>\n                    \n                \n                  </div>\n                \n                  <!-- Controls -->\n                  <a class=\"left carousel-control\" href=\"#carousel-example-generic\" data-slide=\"prev\">\n                    <span class=\"icon-prev\"></span>\n                  </a>\n                  <a class=\"right carousel-control\" href=\"#carousel-example-generic\" data-slide=\"next\">\n                    <span class=\"icon-next\"></span>\n                  </a>\n                </div>\n                \n\n\n\n			</div>",
+			"settings":
+			{
+				"buffer_size": 2036,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 146.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/xampp/htdocs/elearning/index.php",
+		"/D/xampp/htdocs/elearning/about_us.php",
+		"/D/xampp/htdocs/elearning/articles.php",
+		"/D/xampp/htdocs/elearning/admin/function/getData.php",
+		"/D/xampp/htdocs/rental_mobil/index.php",
+		"/D/xampp/htdocs/rental_mobil/engine/proses_login_admin.php",
+		"/D/xampp/htdocs/angular/route_exercise/list.html",
+		"/D/xampp/htdocs/elearning/function/aksi_login.php",
+		"/C/Users/Anwar Pasaribu/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Anwar Pasaribu/AppData/Roaming/Sublime Text 3/Packages/User/AngularJS-sublime-package.sublime-settings",
+		"/D/Learn/Angular JS/Exercise/lat1.html",
+		"/D/Learn/Angular JS/Exercise/lat5_list-tables-repeat.html",
+		"/D/Learn/Angular JS/Exercise/lat6_show-hide.html",
+		"/D/Learn/Angular JS/Exercise/lat2_shopcart.html",
+		"/D/Learn/Angular JS/Exercise/lat7_watch-model-changes.html",
+		"/D/Learn/Angular JS/Exercise/lat4_ng-submit.html",
+		"/D/Learn/Angular JS/Exercise/lat4_list-tables-repeat.html",
+		"/D/Learn/Angular JS/Exercise/lat3_ng-appName.html",
+		"/D/Learn/Angular JS/Exercise/cotroller.js",
+		"/D/Learn/Ionic/exercises/lat_kombur_medan/www/index.html",
+		"/D/Learn/Ionic/exercises/lat_kombur_medan/scss/ionic.app.scss",
+		"/D/Learn/Ionic/exercises/lat_kombur_medan/www/css/style.css",
+		"/D/Learn/Ionic/exercises/lat_kombur_medan/www/js/controllers.js",
+		"/D/Learn/Ionic/exercises/lat_kombur_medan/www/js/services.js",
+		"/D/Learn/Ionic/exercises/lat_kombur_medan/www/templates/tab-dash.html",
+		"/D/Learn/Ionic/exercises/lat_kombur_medan/www/css/ionic.app.css",
+		"/D/xampp/htdocs/hotel_antares_web/pegawai/client.html",
+		"/D/Learn/Ionic/exercises/lat_kombur_medan/www/js/app.js",
+		"/D/Learn/Ionic/exercises/lat_kombur_medan/www/templates/tabs.html",
+		"/D/xampp/htdocs/hotel_antares_web/pegawai/server.js",
+		"/D/xampp/htdocs/hotel_antares_web/pegawai/index.html",
+		"/D/xampp/htdocs/hotel_antares_web/pegawai/list.html",
+		"/D/Learn/Ionic/exercises/lat_kombur_medan/www/templates/tab-chats.html",
+		"/D/Learn/Ionic/exercises/lat_kombur_medan/www/templates/chat-detail.html",
+		"/D/Learn/Ionic/exercises/custom_sass/scss/ionic.app.scss",
+		"/D/Learn/Ionic/exercises/custom_sass/www/index.html",
+		"/D/Learn/Ionic/exercises/lat_kombur_medan/www/templates/tab-account.html",
+		"/D/xampp/htdocs/pasaribu_store/test.html",
+		"/D/xampp/htdocs/pasaribu_store/database_structure/pasaribu_store-20Nop2014.sql",
+		"/D/xampp/htdocs/pasaribu_store/function/get_home_data.php",
+		"/D/xampp/htdocs/pasaribu_store/function/get_supplier_and_brand.php",
+		"/D/xampp/htdocs/pasaribu_store/function/helper_function.php",
+		"/D/xampp/htdocs/pasaribu_store/function/insert_product.php",
+		"/D/xampp/htdocs/pasaribu_store/function/koneksi.php",
+		"/D/xampp/htdocs/pasaribu_store/function/delete_product.php",
+		"/D/Learn/Node js/Latihan/helo.js",
+		"/D/xampp/htdocs/pasaribu_store/README.md",
+		"/C/Users/Anwar Pasaribu/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Anwar Pasaribu/AppData/Roaming/Sublime Text 3/Packages/User/Distraction Free.sublime-settings"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"h4",
+			"div",
+			"title",
+			"h2",
+			"update"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4788,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								4788
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2482.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "fakultas.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4050,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3584,
+								3584
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2036.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "tambah-peminjam.php",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 4706,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "css/my_style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 717,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								126,
+								126
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2036,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								606,
+								606
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"project": "universitas_quality.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 1
+	}
+}
