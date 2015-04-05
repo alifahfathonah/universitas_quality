@@ -1,6 +1,5 @@
 <?php 
 	require('Connections/socfindo_conn.php');
-	require('php-engine/tgl_indo.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -198,3 +197,4 @@
 	
   </body>
 </html>
+html lang=
