@@ -1,11 +1,11 @@
-<?php 
-	require('Connections/socfindo_conn.php');
+<?php
+	require('Connections/connection.php'); 
 	require('php-engine/tgl_indo.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
 	
-  <head>
+<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0" />
@@ -40,16 +40,18 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				  </button>
-				  <a class="navbar-brand" href="index.php">Universitas Quality</a>
+				    <a  class="navbar-brand" style="padding:0px; margin:0px;" href="index.php">
+                        <img class="img-responsive" src="images/nav_logo.png" height="50px" width="90px">
+                    </a>
 				</div>
 				
 				<div class="navbar-collapse collapse">
 				  <ul class="nav navbar-nav">
 				  
 					<li><a href="fakultas.php">Fakultas</a></li>
-					<li><a href="lokasi.php">Lokasi</a></li>
+					<li><a href="kampus.php">Kampus</a></li>
 					<li><a href="biaya.php">Biaya</a></li>
-					<li><a href="kontak.php">Kontak</a></li>
+					<li><a href="about.php">About</a></li>
 					
 				  </ul>
 				</div><!--/.nav-collapse -->
@@ -69,8 +71,7 @@
 			<div class="col-md-12" >
 		  
 				<div class="page-header">
-					<h2>Universitas Quality</h2>
-					<img src="images/logo.png" width="250px">
+					<img src="images/logo.png" width="250px" height="120px">
 				</div>
 					
 			</div>		  

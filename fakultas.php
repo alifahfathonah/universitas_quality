@@ -1,5 +1,5 @@
 <?php 
-	require('Connections/socfindo_conn.php');
+	require('Connections/connection.php');
 	require('php-engine/tgl_indo.php');
 ?>
 <!DOCTYPE html>
@@ -29,9 +29,7 @@
 	
   <body>
 	
-	  <!-- Navbar -->
-	  
-		<!-- Static navbar -->
+	  <!-- Bagian Navigasi/Menu paling atas (Fakultas, Kampus, Biaya, Kontak -->	  
 			<div class="navbar navbar-default navbar-fixed-top">
 			  <div class="container">
 				<div class="navbar-header">
@@ -40,36 +38,37 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				  </button>
-				  <a class="navbar-brand" href="index.php">Universitas Quality</a>
+				    <a  class="navbar-brand" style="padding:0px; margin:0px;" href="index.php">
+                        <img class="img-responsive" src="images/nav_logo.png" height="50px" width="90px">
+                    </a>
 				</div>
 				
 				<div class="navbar-collapse collapse">
 				  <ul class="nav navbar-nav">
 				  
 					<li class="active"><a href="fakultas.php">Fakultas</a></li>
-					<li><a href="lokasi.php">Lokasi</a></li>
+					<li><a href="kampus.php">Kampus</a></li>
 					<li><a href="biaya.php">Biaya</a></li>
 					<li><a href="kontak.php">Kontak</a></li>
 					
 				  </ul>
-				</div><!--/.nav-collapse -->
+				</div>
 				
 			  </div>
 			</div>
-	
-	  <!-- /Navbar -->
+      <!-- END-Bagian Navigasi/Menu paling atas (Fakultas, Kampus, Biaya, Kontak -->
 	  
 	  
-	<!-- Bagian Header Untuk Halaman Utama -->
-	<div class="jumbotron">
+	<!-- Bagian Header Untuk masing-masing fakultas -->
+	<div class="jumbotron fak-pertanian">
 	
 	  <div class="container" >
 		
 			<!-- Tambah Data Peminjaman -->        
-			<div class="col-md-12" >
+			<div class="col-md-5 col-sm-5">
 		  
 				<div class="page-header">
-					<h2>Fakultas ...</h2>
+					<h1>Fakultas ...</h1>
 				</div>
 
 			</div>		  
