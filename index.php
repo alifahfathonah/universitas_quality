@@ -1,6 +1,11 @@
+<<<<<<< HEAD
 <?php
 	require('Connections/connection.php'); 
 	require('php-engine/tgl_indo.php');
+=======
+<?php 
+	require('Connections/socfindo_conn.php');
+>>>>>>> origin/master
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -199,3 +204,4 @@
 	
   </body>
 </html>
+html lang=
