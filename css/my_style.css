@@ -7,12 +7,27 @@
 }
 /*END-Mengubah warna navbar*/
 
+
+/* Style untuk Header Halaman*/
 .jumbotron {
 	background:url(../images/leaf.jpg) no-repeat center;
 	background-size:cover;
 	min-height:600px;
 	margin:0px;
 	padding-bottom:0px;
+}
+
+ /* Style untuk teks Fakultas... di halaman fakultas.php*/   
+.jumbotron div.page-header {
+    padding: 10px ;        
+    background-color:RGBA(248,248,248, 0.9);
+}
+
+
+/* Style utk mengubah masing'' gambar fakultas */
+.fak-pertanian {
+    background:url(../images/fak/pertanian-labu.jpg) no-repeat;
+    background-size:cover;
 }
 
 
