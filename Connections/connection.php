@@ -1,6 +1,10 @@
 <?php	
 	// Konektor ke database //
 	// Untuk mengatur koneksi website dengan database MySQL.
+	// $host = alamat server yg dituju, karena di akses secara offline maka "localhost"
+	// $user = jelas
+	// $password = Password yg digunakan untuk proteksi database, kosongkan jika tidak ada
+	// $db_name = nama database adalah universitas_quality
 
 	$host = "localhost";	
 	$user = "root";	
