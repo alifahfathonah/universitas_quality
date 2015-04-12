@@ -1,11 +1,6 @@
-<<<<<<< HEAD
 <?php
 	require('Connections/connection.php'); 
 	require('php-engine/tgl_indo.php');
-=======
-<?php 
-	require('Connections/socfindo_conn.php');
->>>>>>> origin/master
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -53,10 +48,20 @@
 				<div class="navbar-collapse collapse">
 				  <ul class="nav navbar-nav">
 				  
-					<li><a href="fakultas.php">Fakultas</a></li>
-					<li><a href="kampus.php">Kampus</a></li>
-					<li><a href="biaya.php">Biaya</a></li>
-					<li><a href="about.php">About</a></li>
+                           <li class="dropdown">
+                            <a href="#fakultas" class="dropdown-toggle" data-toggle="dropdown">Fakultas <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                              <li><a href="fakultas.php?fak=fp">Pertanian</a></li>
+                              <li><a href="fakultas.php?fak=fe">Ekonomi</a></li>
+                              <li><a href="fakultas.php?fak=fkip">Keguruan &amp; Ilmu Pendidikan</a></li>
+                              <li><a href="fakultas.php?fak=ft">Teknik</a></li>
+                              <li><a href="fakultas.php?fak=fh">Hukum</a></li>
+                            </ul>
+                          </li> 
+                      
+                        <li><a href="kampus.php">Kampus</a></li>
+                        <li><a href="biaya.php">Biaya</a></li>
+                        <li><a href="about.php">About</a></li>
 					
 				  </ul>
 				</div><!--/.nav-collapse -->
@@ -82,31 +87,31 @@
 			</div>		  
 			<!-- /Tambah Data Peminjaman -->	
 
-			<!-- List Gambar/Fitur sedang terjadi-->
+			<!-- List Gambar pada Home-->
 			<div class="row">
 
-				<div class="col-md-3 col-sm-4 col-xs-6">
-					<img src="images/bg.jpg" class="img-responsive">
-					<h4>Foto / Fitur</h4>
+				<div class="col-md-3 col-sm-6 col-xs-6">
+					<img src="images/home/gedung.png" class="img-responsive">
+					<h4>Gedung Kampus Innovator</h4>
 				</div>
 
-				<div class="col-md-3 col-sm-4 col-xs-6">
-					<img src="images/bg.jpg" class="img-responsive">
-					<h4>Foto / Fitur</h4>
+				<div class="col-md-3 col-sm-6 col-xs-6">
+					<img src="images/home/kantor.png" class="img-responsive">
+					<h4>Kantor Fakultas Teknik</h4>
 				</div>
 
-				<div class="col-md-3 col-sm-4 col-xs-6">
-					<img src="images/bg.jpg" class="img-responsive">
-					<h4>Foto / Fitur</h4>
+				<div class="col-md-3 col-sm-6 col-xs-6">
+					<img src="images/home/kebun.png" class="img-responsive">
+					<h4>Kebun pada Fakultas Pertanain</h4>
 				</div>
 
-				<div class="col-md-3 col-sm-4 col-xs-6">
-					<img src="images/bg.jpg" class="img-responsive">
-					<h4>Foto / Fitur</h4>
+				<div class="col-md-3 col-sm-6 col-xs-6">
+					<img src="images/home/teknik.png" class="img-responsive">
+					<h4>Fasilitas pada lab Teknik Sipil</h4>
 				</div>
 
 			</div>        	
-			<!-- END-List Gambar/Fitur sedang terjadi-->
+			<!-- END-List Gambar pada Home-->
 		
 	  </div>
 					

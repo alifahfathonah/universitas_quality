@@ -2,8 +2,9 @@
 
 /*Mengubah warna navbar*/
 .navbar-fixed-top {
-	background-color:RGBA(248,248,248, 0.9);
+	background-color:#f8f8f8;
 	font-weight: bold;
+    opacity:0.9;
 }
 /*END-Mengubah warna navbar*/
 
@@ -17,20 +18,20 @@
 	padding-bottom:0px;
 }
 
- /* Style untuk teks Fakultas... di halaman fakultas.php*/   
-.jumbotron div.page-header {
-    padding: 10px ;        
-    background-color:RGBA(248,248,248, 0.9);
+/* Untuk meperkecil tinggi gambar header pada layar hape */
+@media (max-width: 767px) { 
+    
+    .jumbotron {
+        background:url(../images/leaf.jpg) no-repeat center;
+        background-size:cover;
+        min-height:0px;
+        margin:0px;
+        padding-bottom:0px;
+    }
+    
 }
-
-
-/* Style utk mengubah masing'' gambar fakultas */
-.fak-pertanian {
-    background:url(../images/fak/pertanian-labu.jpg) no-repeat;
-    background-size:cover;
-}
-
-
+/* END-Untuk meperkecil tinggi gambar header pada layar hape */
+ 
 /*Untuk membuat info overlay pada gambar/items*/
 div.special {
 	border: 1px solid #ff0ff0;

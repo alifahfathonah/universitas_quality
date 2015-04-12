@@ -1,0 +1,12 @@
+fasilitas:
+-id_fasilitas
+-id_fakultas
+-nama
+-gambar
+-keterangan
+
+prodi:
+-id_prodi
+-id_fakultas
+-nama_prodi
+-nomor_izin
