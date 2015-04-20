@@ -1,3 +1,9 @@
+fakultas:
+-id_fakultas
+-nama
+-gambar
+-warna
+
 fasilitas:
 -id_fasilitas
 -id_fakultas
@@ -10,3 +16,11 @@ prodi:
 -id_fakultas
 -nama_prodi
 -nomor_izin
+
+berita:
+-id_berita
+-judul_berita
+-isi_berita
+-gambar_berita
+
+
