@@ -9,9 +9,25 @@
 
     if( isset($_GET['fak']) ) { $fakultas_aktif = strtolower($_GET['fak']); }  
 
+	//Bagian untuk kelola database
+
+	//Bagian untuk Data Fakultas
     $query_fak      = "SELECT * FROM fakultas WHERE id_fakultas = '".strtoupper($fakultas_aktif)."' ";
     $exec_fakultas  = mysql_query($query_fak) or die(mysql_error());
     $fak_data       = mysql_fetch_array($exec_fakultas) or die(mysql_error());
+
+	//Bagian utk data Fasilitas
+	$query_fas		= "SELECT * FROM fasilitas WHERE id_fakultas = '".strtoupper($fakultas_aktif)."' ";
+	$exec_fas  		= mysql_query($query_fas) or die(mysql_error());
+	//ambil data langsung pada "body"
+
+	//Bagian utk data Program Study
+	$query_pro		= "SELECT * FROM prodi WHERE id_fakultas = '".strtoupper($fakultas_aktif)."' ";
+	$exec_pro  		= mysql_query($query_pro) or die(mysql_error());
+	//ambil data langsung pada "body"
+
+	
+	//Veriabel masuk dari databse
 
     //Variable spesifik fakultas
     $fak_nama       = $fak_data['nama'];
@@ -87,6 +103,18 @@
                 background:url(<?php echo $fak_gambar; ?>) no-repeat;
                 background-size:cover;
             }
+			
+			@media (max-width: 767px) { 
+				.media-object {
+					width:100px;
+				}
+			}
+			
+			@media (min-width: 768px) { 
+				.media-object {
+					width:150px;
+				}
+			}
             
         </style>
 	
@@ -166,72 +194,90 @@
 
   <!-- Konten di bawah header -->
   <div class="container" >
-
-	  <!-- Fasiltas Fakultas  -->
-	  <div class="row" >
+	  
+	<div class="row">
+	  
+	   <!-- Program Studi -->
+	  <div class="col-md-6 col-sm-6" >
 		  
-			<!-- Fasilitas dalam fakultas -->        
-			<div class="col-md-12">
+		  
+				<div class="page-header">
+					<h2>Program Study </h2>
+				</div>
+				
+				<?php
+				while($pro_data = mysql_fetch_array($exec_pro) ){
+					
+					$nama_pro 	= $pro_data['nama_prodi'];
+					$logo_pro 	= $pro_data['logo_prodi'];
+					$no_izi		= $pro_data['nomor_izin']; 
+					
+				?>
+				
+						
+							<div class="media">
+							  <a class="pull-left" href="#" style="cursor:default;">
+								<img style="width:50px; border-radius:25px;" class="img-responsive" src="<?php echo $logo_pro; ?>" alt="Gambar">
+							  </a>
+							  <div class="media-body">
+								<h4 class="media-heading"><?php echo $nama_pro; ?></h4>
+								<?php echo $no_izi; ?>
+							  </div>
+							</div>
+		  					<hr>
+
+				
+					
+				<?php
+				}
+				?>		  
+				
+		  
+	  </div>
+	  <!--END-Program Studi-->
+	  
+
+	  <!-- Fasiltas Fakultas  -->		  
+			<div class="col-md-6 col-sm-6">
 		  
 				<div class="page-header">
 					<h2>Fasilitas </h2>
 				</div>
-
-                <!-- Item utk fasilitas -->
-				<div class="col-md-6 col-sm-6">
-
-					<h3 class="lead">Fasilitas 1</h3>
-
-					<div class="special">
-						<div class="special-img">
-							<a href="#">
-								<img src="images/map.jpg" class="img-responsive " alt="Kampus Creator">
-								<span>
-									<p>
-										<br>
-										Jl. Ring Road Ngumban Surbakti No. 18 Medan<br>
-										Simpang Quality<br>
-										<strong>Telp/Fax. (061) 8004 7003</strong>
-									</p>
-								</span>
-							</a>
-						</div>
-					</div>	  
-				</div>
-                <!-- END-Item utk fasilitas -->
-
-				<div class="col-md-6 col-sm-6">	
-
-					<h3 class="lead">Fasilitas 2</h3>			
-
-					<div class="special">
-						<div class="special-img">
-							<a href="#">
-								<img src="images/map.jpg" class="img-responsive" alt="Kampus Innovator">
-								<span>
-									<p>
-										<br>
-										Quality Hill<br>
-										Peceran - Lau Gumba Kecamatan Berastagi<br>
-										<strong>Telp. (06288) 92188</strong>
-									</p>
-								</span>
-							</a>
-						</div>
+				
+				<!-- Item utk fasilitas -->
+				<?php
+				while($fas_data = mysql_fetch_array($exec_fas) ){
+					
+					$nama_fas 	= $fas_data['nama'];
+					$gambar_fas = $fas_data['gambar'];
+					$ket_fas 	= $fas_data['keterangan']; 
+					
+				?>
+				
+					<div class="media">
+					  <a class="pull-left" href="#" style="cursor:default;">
+						<img class="media-object" src="<?php echo $gambar_fas; ?>" alt="Gambar">
+					  </a>
+					  <div class="media-body">
+						<h4 class="media-heading"><?php echo $nama_fas; ?></h4>
+						<?php echo $ket_fas; ?>
+					  </div>
 					</div>
-
-				</div>
-						  
-
-			</div>		  
-			<!-- END-Fasilitas dalam fakultas -->    		  
-		  
-	  </div>
-	  <!-- END-Fasiltas Fakultas -->
-
+									
+					
+				<?php
+				}
+				?>		  
+				<!-- END- Item utk fasilitas -->
+				
+			</div>	  
+	  		<!-- END-Fasiltas Fakultas -->
 		
+	  </div>
+	 
+	  
 	  <!-- FOOTER -->
-	  <footer style="margin-top:50px;">
+	  <footer class="col-md-12" style="margin-top:50px;">
 		<p class="pull-right"><a href="#">Back to top</a></p>
 		<p>
 			&copy; 2014 Unversitas Quality<br>
