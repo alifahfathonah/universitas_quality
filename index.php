@@ -1,6 +1,6 @@
 <?php
+	// Untuk menghubungkan dengan Database
 	require('Connections/connection.php'); 
-	require('php-engine/tgl_indo.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -10,11 +10,31 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0" />
 
-		<title>Universitas Quality</title>
+		<title>Home Universitas Quality</title>
 	
 		<!-- Bootstrap core CSS -->
 		<link href="css/bootstrap.css" rel="stylesheet">
 		<link href="css/my_style.css" rel="stylesheet">
+		<style type="text/css">
+	
+			.jumbotron {
+				background:url(images/leaf.jpg) no-repeat center;
+				background-size:cover;
+				min-height:600px;
+				margin:0px;
+				padding-bottom:0px;
+			}
+			
+			a.link_berita {
+				border:1px solid #999;
+				display:block;
+				background-color:RGBA(235,235,235, 0.9);
+				color:black;
+				
+				margin-bottom:20px;
+			}
+	
+		</style>
 	
 		<!-- Just for debugging purposes. Don't actually copy this line! -->
 		<!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -91,23 +111,31 @@
 			<div class="row">
 
 				<div class="col-md-3 col-sm-6 col-xs-6">
-					<img src="images/home/gedung.png" class="img-responsive">
-					<h4>Gedung Kampus Innovator</h4>
+					<a class="link_berita" href="berita.php">
+						<img src="images/home/gedung.png" class="img-responsive">
+						<h4>Gedung Kampus Innovator</h4>
+					</a>
 				</div>
 
 				<div class="col-md-3 col-sm-6 col-xs-6">
-					<img src="images/home/kantor.png" class="img-responsive">
-					<h4>Kantor Fakultas Teknik</h4>
+					<a class="link_berita" href="berita.php">
+						<img src="images/home/kantor.png" class="img-responsive">
+						<h4>Kantor Fakultas Teknik</h4>
+					</a>
 				</div>
 
 				<div class="col-md-3 col-sm-6 col-xs-6">
-					<img src="images/home/kebun.png" class="img-responsive">
-					<h4>Kebun pada Fakultas Pertanain</h4>
+					<a class="link_berita" href="berita.php">
+						<img src="images/home/kebun.png" class="img-responsive">
+						<h4>Kebun pada Fakultas Pertanain</h4>
+					</a>
 				</div>
 
 				<div class="col-md-3 col-sm-6 col-xs-6">
-					<img src="images/home/teknik.png" class="img-responsive">
-					<h4>Fasilitas pada lab Teknik Sipil</h4>
+					<a class="link_berita" href="berita.php">
+						<img src="images/home/teknik.png" class="img-responsive">
+						<h4>Fasilitas pada lab Teknik Sipil dana judul yag sangat panjang</h4>
+					</a>
 				</div>
 
 			</div>        	
@@ -132,56 +160,71 @@
 					<h2>Lokasi Kampus</h2>
 				</div>
 
-				<div class="col-md-6 col-sm-6">
+                <div class="row">                
+                    <div class="col-md-6 col-sm-6">
+                        
+                            <img src="images/gedung-creator.JPG" class="img-responsive">
 
-					<p class="lead">Kampus Creator Medan</p>
+                            <h3><strong>Kampus Creator Medan</strong></h3>
+                            <p class="lead">
+                                Jl. Ring Road Ngumban Surbakti No. 18 Medan<br>
+                                Simpang Quality<br>
+                                <strong>Telp/Fax. (061) 8004 7003</strong>
+                            </p>
+                    </div>
+                    
+                    <div class="col-md-6 col-sm-6">
+                        <img src="images/map-creator.jpg" class="img-responsive " alt="Kampus Creator">
+                    </div>
+                    
+                </div>
+                
+                <hr>
+                
+                <div class="row" style="margin-top:25px;"> 
+                    
+                    <!-- nilai "visible-xs" pada kelas berguna untuk 
+                        menampilkan hanya pada layar hape
+                    -->
+                    <div class="col-md-6 col-sm-6 visible-xs">
+                        
+                            <img src="images/gedung-innovator.JPG" class="img-responsive">
 
-					<div class="special">
-						<div class="special-img">
-							<a href="#">
-								<img src="images/map.jpg" class="img-responsive " alt="Kampus Creator">
-								<span>
-									<p>
-										<br>
-										Jl. Ring Road Ngumban Surbakti No. 18 Medan<br>
-										Simpang Quality<br>
-										<strong>Telp/Fax. (061) 8004 7003</strong>
-									</p>
-								</span>
-							</a>
-						</div>
-					</div>					  
+                            <h3><strong>Kampus Innovator Medan</strong></h3>
+                            <p class="lead">
+								Quality Hill<br>
+								Peceran - Lau Gumba Kecamatan Berastagi<br>
+								<strong>Telp. (06288) 92188</strong>
+                            </p>
+                    </div>
+                    
+                    
+                    <div class="col-md-6 col-sm-6">
+                        <img src="images/map-innovator.jpg" class="img-responsive " alt="Kampus Innovator">
+                    </div>
+                    
+                    
+                    <!-- nilai "hidden-xs" pada kelas berguna untuk 
+                        menyembunyikan hanya pada layar hape.
+                        GUNA: Untuk memperbaiki perubahan layout yg terjadi.
+                    -->
+                    <div class="col-md-6 col-sm-6 hidden-xs">
+                        
+                            <img src="images/gedung-innovator.JPG" class="img-responsive">
 
-				</div>
-
-				<div class="col-md-6 col-sm-6">	
-
-					<p class="lead">Kampus Innovator Medan</p>			
-
-					<div class="special">
-						<div class="special-img">
-							<a href="#">
-								<img src="images/map.jpg" class="img-responsive" alt="Kampus Innovator">
-								<span>
-									<p>
-										<br>
-										Quality Hill<br>
-										Peceran - Lau Gumba Kecamatan Berastagi<br>
-										<strong>Telp. (06288) 92188</strong>
-									</p>
-								</span>
-							</a>
-						</div>
-					</div>
-
-				</div>
-
-						  
+                            <h3><strong>Kampus Innovator Medan</strong></h3>
+                            <p class="lead">
+								Quality Hill<br>
+								Peceran - Lau Gumba Kecamatan Berastagi<br>
+								<strong>Telp. (06288) 92188</strong>
+                            </p>
+                    </div>        
+                    
+                </div>
+                		  
 
 			</div>		  
-			<!-- END-Baris Informasi Lokasi Kampus -->  		  
-			
-		  
+			<!-- END-Baris Informasi Lokasi Kampus --> 
 		  
 	  </div>
 
@@ -198,14 +241,12 @@
 </div>
 <!-- END-Konten di bawah header -->
   
+    <!-- 
+    Code JavaScript (Library bawaan bootstrap) 
+    utk mengaktifkan fitur dropdown pada navigasi fakultas.
+    -->
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/aplikasi.js" type="text/javascript"></script>
-	<script>
-	
-		
-	
-	</script>
 	
   </body>
 </html>
