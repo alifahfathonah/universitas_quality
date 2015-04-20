@@ -11,9 +11,8 @@
 
 /* Style untuk Header Halaman*/
 .jumbotron {
-	background:url(../images/leaf.jpg) no-repeat center;
 	background-size:cover;
-	min-height:600px;
+	min-height:300px;
 	margin:0px;
 	padding-bottom:0px;
 }
@@ -22,11 +21,17 @@
 @media (max-width: 767px) { 
     
     .jumbotron {
-        background:url(../images/leaf.jpg) no-repeat center;
         background-size:cover;
         min-height:0px;
         margin:0px;
         padding-bottom:0px;
+    }
+    
+    .navbar-fixed-top {
+        background-color:#f8f8f8;
+        font-weight: bold;
+        opacity:1;
+        text-align: right;
     }
     
 }
