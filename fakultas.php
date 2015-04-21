@@ -12,9 +12,9 @@
 	//Bagian untuk kelola database
 
 	//Bagian untuk Data Fakultas
-    $query_fak      = "SELECT * FROM fakultas WHERE id_fakultas = '".strtoupper($fakultas_aktif)."' ";
-    $exec_fakultas  = mysql_query($query_fak) or die(mysql_error());
-    $fak_data       = mysql_fetch_array($exec_fakultas) or die(mysql_error());
+	$query_fak      = "SELECT * FROM fakultas WHERE id_fakultas = '".strtoupper($fakultas_aktif)."' ";
+    	$exec_fakultas  = mysql_query($query_fak) or die(mysql_error());
+    	$fak_data       = mysql_fetch_array($exec_fakultas) or die(mysql_error()); //Mengamil data dan disimpan ke "keranjang"/Array $fak_data
 
 	//Bagian utk data Fasilitas
 	$query_fas		= "SELECT * FROM fasilitas WHERE id_fakultas = '".strtoupper($fakultas_aktif)."' ";
@@ -246,11 +246,16 @@
 				
 				<!-- Item utk fasilitas -->
 				<?php
-				while($fas_data = mysql_fetch_array($exec_fas) ){
+				//Konsep bagian sama dengan pengambilan data utk Fakultas (line:17)
+				//data akan di simpan ke $fas_data
+				//karena data yang di dapat dari database kemungkinan akan lebih dari satu, maka di lakukan perulangan (loop)
+				//untuk memastikan semua data diambil
+				while($fas_data = mysql_fetch_array($exec_fas) ){ 
+					//Setiap loop akan mengamil data dari array dan menyimpan ke var berikut:
 					
-					$nama_fas 	= $fas_data['nama'];
-					$gambar_fas = $fas_data['gambar'];
-					$ket_fas 	= $fas_data['keterangan']; 
+					$nama_fas 	= $fas_data['nama'];  // Untuk nama fasilitas "Kebun pendidikan", ditampilkan di line:267
+					$gambar_fas 	= $fas_data['gambar']; // Gambar utk fasilitas, line:264
+					$ket_fas 	= $fas_data['keterangan'];  // Keterangan, line:268
 					
 				?>
 				
