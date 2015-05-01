@@ -1,1 +1,0 @@
-<?php		//$data = $_SERVER['QUERY_STRING'];	$data = parse_str($_SERVER['QUERY_STRING']);	//	foreach($data as $key => $val){//		echo "Key : " . $key . " : ". $val . " <br>";	//	}	print_r($data);?>

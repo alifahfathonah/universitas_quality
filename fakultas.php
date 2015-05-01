@@ -1,6 +1,5 @@
 <?php 
 	require('Connections/connection.php');
-	require('php-engine/tgl_indo.php');
     
     // Variabel Umum
     $fakultas_aktif = "fp"; 
@@ -66,7 +65,7 @@
 		<title> <?php echo $fak_nama; ?> </title>
 	
 		<!-- Bootstrap core CSS -->
-		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/my_style.css" rel="stylesheet">
       
         <style type="text/css">
@@ -92,7 +91,7 @@
             
             /* Style untuk teks Fakultas... di halaman fakultas.php*/   
             .jumbotron div.page-header {
-                padding: 10px ;        
+                padding: 10px 0px 10px 30px ;        
                 background-color:<?php echo $fak_warna; ?>;
                 border-color:<?php echo $fak_warna; ?>;
                 opacity:0.9;
@@ -285,7 +284,7 @@
 	  <footer class="col-md-12" style="margin-top:50px;">
 		<p class="pull-right"><a href="#">Back to top</a></p>
 		<p>
-			&copy; 2014 Unversitas Quality<br>
+			&copy; <?php echo date('Y A'); ?> Unversitas Quality<br>
 		</p>
 	  </footer>
 	  <!-- END-FOOTER -->
@@ -295,7 +294,6 @@
   
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/aplikasi.js" type="text/javascript"></script>
 	<script>
 	
 		

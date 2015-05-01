@@ -13,7 +13,7 @@
 		<title>Home Universitas Quality</title>
 	
 		<!-- Bootstrap core CSS -->
-		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/my_style.css" rel="stylesheet">
 		<style type="text/css">
 	
@@ -32,6 +32,25 @@
 				color:black;
 				
 				margin-bottom:20px;
+			}
+			
+			div.home-feature {
+				margin-top:20px;
+				padding:0px;
+			}
+			
+			div.media {
+				border:1px solid #fff;
+				background-color:RGBA(235,235,235, 0.5);
+			}
+			
+			div.jumbotron p {
+				font-size:14px;	
+			}
+			
+			/* Untuk memberikan padding-top pada "Akreditas BAN-PT, dst" */
+			div.media-body {
+				padding-top:10px;	
 			}
 	
 		</style>
@@ -97,49 +116,61 @@
 	
 	  <div class="container" >
 		
-			<!-- Tambah Data Peminjaman -->        
-			<div class="col-md-12" >
+			<!-- Bagian Logo Kampus dan 3 Pilar Utama -->        
+			<div class="col-md-8" >
 		  
-				<div class="page-header">
+				<div class="page-header text-center">
 					<img src="images/logo.png" width="250px" height="120px">
+					<p><strong>Real, Consistent</strong></p>
+				</div>
+				<div>
+					<img src="images/home-pic.png" class="img-responsive">
+					
 				</div>
 					
 			</div>		  
-			<!-- /Tambah Data Peminjaman -->	
+			<!-- END - Bagian Logo Kampus dan 3 Pilar Utama -->	
 
-			<!-- List Gambar pada Home-->
-			<div class="row">
-
-				<div class="col-md-3 col-sm-6 col-xs-6">
-					<a class="link_berita" href="berita.php">
-						<img src="images/home/gedung.png" class="img-responsive">
-						<h4>Gedung Kampus Innovator</h4>
-					</a>
+			<!-- List Gambar Fitur pada Home-->
+			<div class="col-md-4 home-feature">
+				
+				
+				<div class="media">
+				  <a class="pull-left" href="#" style="cursor:default;">
+					<img width="100px" class="media-object" src="images/home-ban-pt.jpg" >
+				  </a>
+				  <div class="media-body">
+					<h4 class="media-heading"><strong>Akreditasi BAN-PT</strong></h4>
+					<p class="lead">Semua Fakultas dan Program Studi sudah terakreditas oleh BAN-PT.</p>
+				  </div>
 				</div>
-
-				<div class="col-md-3 col-sm-6 col-xs-6">
-					<a class="link_berita" href="berita.php">
-						<img src="images/home/kantor.png" class="img-responsive">
-						<h4>Kantor Fakultas Teknik</h4>
-					</a>
+				
+				<div class="media" >
+				  <a class="pull-left" href="#" style="cursor:default;">
+					<img width="100px" class="media-object" src="images/home-beasiswa.jpg" >
+				  </a>
+				  <div class="media-body" >
+					<h4 class="media-heading"><strong>Beasiswa</strong></h4>
+					<p class="lead">Universitas akan memberika beasiswa untuk mahasiswa berprestasi.</p>
+				  </div>
 				</div>
-
-				<div class="col-md-3 col-sm-6 col-xs-6">
-					<a class="link_berita" href="berita.php">
-						<img src="images/home/kebun.png" class="img-responsive">
-						<h4>Kebun pada Fakultas Pertanain</h4>
-					</a>
+				
+				<div class="media">
+				  <a class="pull-left" href="#" style="cursor:default;">
+					<img width="100px" class="media-object" src="images/home-feature.jpg" >
+				  </a>
+				  <div class="media-body">
+					<h4 class="media-heading"><strong>Free Unlimited Wifi</strong></h4>
+					<p class="lead">Semua proses belajar mengajar akan lancar dengan fasilitas ini.</p>
+				  </div>
 				</div>
-
-				<div class="col-md-3 col-sm-6 col-xs-6">
-					<a class="link_berita" href="berita.php">
-						<img src="images/home/teknik.png" class="img-responsive">
-						<h4>Fasilitas pada lab Teknik Sipil dana judul yag sangat panjang</h4>
-					</a>
-				</div>
+				
+				
 
 			</div>        	
-			<!-- END-List Gambar pada Home-->
+			<!-- END-List Gambar Fitur pada Home-->
+		  
+		  <div class="clear-fix">&nbsp;</div>
 		
 	  </div>
 					
@@ -151,89 +182,76 @@
   <div class="container" >
 
 	  <!-- Lokasi Kampus  -->
-	  <div class="row" >
-		  
-			<!-- Baris Informasi Lokasi Kampus -->        
-			<div class="col-md-12">
-		  
-				<div class="page-header">
-					<h2>Lokasi Kampus</h2>
-				</div>
+	  <div class="row">
 
-                <div class="row">                
-                    <div class="col-md-6 col-sm-6">
-                        
-                            <img src="images/gedung-creator.JPG" class="img-responsive">
+	<!-- Baris Informasi Lokasi Kampus -->
+	<div class="col-md-12" >
 
-                            <h3><strong>Kampus Creator Medan</strong></h3>
-                            <p class="lead">
-                                Jl. Ring Road Ngumban Surbakti No. 18 Medan<br>
-                                Simpang Quality<br>
-                                <strong>Telp/Fax. (061) 8004 7003</strong>
-                            </p>
-                    </div>
-                    
-                    <div class="col-md-6 col-sm-6">
-                        <img src="images/map-creator.jpg" class="img-responsive " alt="Kampus Creator">
-                    </div>
-                    
-                </div>
-                
-                <hr>
-                
-                <div class="row" style="margin-top:25px;"> 
-                    
-                    <!-- nilai "visible-xs" pada kelas berguna untuk 
+		<div class="page-header" >
+			<h2>Lokasi Kampus</h2>
+		</div>
+
+		<div class="row">
+			<div class="col-md-6 col-sm-6">
+				<h3 class="visible-xs text-center"><strong>Kampus Creator Medan</strong></h3>
+				<img src="images/gedung-creator.JPG" class="img-responsive">
+
+				<h3 class="hidden-xs"><strong>Kampus Creator Medan</strong></h3>
+				
+				<p class="lead">
+					Jl. Ring Road Ngumban Surbakti No. 18 Medan
+					<br> Simpang Quality
+					<br>
+					<strong>Telp/Fax. (061) 8004 7003</strong>
+				</p>
+			</div>
+
+			<div class="col-md-6 col-sm-6">
+				<img src="images/map-creator.jpg" class="img-responsive " alt="Kampus Creator">
+			</div>
+
+		</div>
+
+		<hr>
+
+		<div class="row" style="margin-top:25px;">
+
+			<!-- nilai "visible-xs" pada kelas berguna untuk 
                         menampilkan hanya pada layar hape
                     -->
-                    <div class="col-md-6 col-sm-6 visible-xs">
-                        
-                            <img src="images/gedung-innovator.JPG" class="img-responsive">
+			<div class="col-md-6 col-sm-6">
+				<h3 class="visible-xs text-center"><strong>Kampus Innovator Medan</strong></h3>
+				<img src="images/gedung-innovator.JPG" class="img-responsive">
 
-                            <h3><strong>Kampus Innovator Medan</strong></h3>
-                            <p class="lead">
-								Quality Hill<br>
-								Peceran - Lau Gumba Kecamatan Berastagi<br>
-								<strong>Telp. (06288) 92188</strong>
-                            </p>
-                    </div>
-                    
-                    
-                    <div class="col-md-6 col-sm-6">
-                        <img src="images/map-innovator.jpg" class="img-responsive " alt="Kampus Innovator">
-                    </div>
-                    
-                    
-                    <!-- nilai "hidden-xs" pada kelas berguna untuk 
-                        menyembunyikan hanya pada layar hape.
-                        GUNA: Untuk memperbaiki perubahan layout yg terjadi.
-                    -->
-                    <div class="col-md-6 col-sm-6 hidden-xs">
-                        
-                            <img src="images/gedung-innovator.JPG" class="img-responsive">
+				<h3 class="hidden-xs"><strong>Kampus Innovator Medan</strong></h3>
+				<p class="lead">
+					Quality Hill
+					<br> Peceran - Lau Gumba Kecamatan Berastagi
+					<br>
+					<strong>Telp. (06288) 92188</strong>
+				</p>
+			</div>
 
-                            <h3><strong>Kampus Innovator Medan</strong></h3>
-                            <p class="lead">
-								Quality Hill<br>
-								Peceran - Lau Gumba Kecamatan Berastagi<br>
-								<strong>Telp. (06288) 92188</strong>
-                            </p>
-                    </div>        
-                    
-                </div>
-                		  
 
-			</div>		  
-			<!-- END-Baris Informasi Lokasi Kampus --> 
-		  
-	  </div>
+			<div class="col-md-6 col-sm-6">
+				<img src="images/map-innovator.jpg" class="img-responsive " alt="Kampus Innovator">
+			</div>
+			
+
+		</div>
+
+
+	</div>
+	<!-- END-Baris Informasi Lokasi Kampus -->
+
+</div>
 
 		
 	  <!-- FOOTER -->
 	  <footer style="margin-top:50px;">
 		<p class="pull-right"><a href="#">Back to top</a></p>
 		<p>
-			&copy; 2014 Unversitas Quality<br>
+			&copy; <?php echo date('Y A'); ?> Unversitas Quality<br>
 		</p>
 	  </footer>
 	  <!-- END-FOOTER -->
@@ -250,4 +268,3 @@
 	
   </body>
 </html>
-html lang=

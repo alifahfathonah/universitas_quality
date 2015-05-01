@@ -33,7 +33,7 @@
 		<title>Kampus Universitas Quality</title>
 	
 		<!-- Bootstrap core CSS -->
-		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/my_style.css" rel="stylesheet">
       
         <style type="text/css">
@@ -129,7 +129,7 @@
                       
 					<li class="active"><a href="kampus.php">Kampus</a></li>
 					<li><a href="biaya.php">Biaya</a></li>
-					<li><a href="kontak.php">Kontak</a></li>
+					<li><a href="about.php">About</a></li>
 					
 				  </ul>
 				</div>
@@ -252,7 +252,7 @@
 	  <footer style="margin-top:50px;">
 		<p class="pull-right"><a href="#">Back to top</a></p>
 		<p>
-			&copy; 2014 Unversitas Quality<br>
+			&copy; <?php echo date('Y A'); ?> Unversitas Quality<br>
 		</p>
 	  </footer>
 	  <!-- END-FOOTER -->
@@ -262,7 +262,6 @@
   
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/aplikasi.js" type="text/javascript"></script>
 	<script>
 	
 		
